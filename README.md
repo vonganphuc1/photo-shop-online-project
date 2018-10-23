@@ -1,1 +1,2 @@
-# photo-shop-online-project
+# Photo Shop Online
+Trang web đặt in ảnh Nhựt Minh
