@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<title> Liên Hệ </title>
+		<link rel="stylesheet" type="text/css" href="../css/style-phuc.css">
+		<style>
+      	#map {height: 400px; width: 100%;}
+    	</style>
+	</head>
+	<body align = "center">
+
+		<div id="header">
+			<h1> Liên Hệ </h1>
+		</div>
+
+		<div id="container">
+
+			<div id="content" align="center">
+				<table>
+				<tr><th align="left">Số điện thoại: 0974 951 904 - 0981 867 654</th></tr>	
+				<tr><th align="left">Địa chỉ: KTX Khu B ĐHQG - P. Linh Trung, Q. Thủ Đức, TP. Hồ Chí Kinh</th></tr>
+				<tr><th align="left">Email: inanhminhnhu@gmail.com</th></tr>
+				</table>
+				<a class="button" href="http://www.facebook.com/Inanhminhnhu" target="_blank" title="Click vao dia chi fb"> Fanpage Facebook </a>
+				
+						<h3> Địa chỉ trên bản đồ </h3>
+			    <div id="map">
+				    <script>
+					function initMap() 
+					{
+					  var KTXDHQG = {lat: 10.884585, lng: 106.781772};
+					  var map = new google.maps.Map(document.getElementById('map'), {zoom: 17, center: KTXDHQG});
+					  var marker = new google.maps.Marker({position: KTXDHQG, map: map});
+					}
+				    </script>
+			    </div>
+
+			</div>
+
+		    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-MUtWxNEtDWKcyg38wpxrQRmaQvX9TI&callback=initMap">
+	    	</script>
+
+    	</div>
+	</body>
+</html>

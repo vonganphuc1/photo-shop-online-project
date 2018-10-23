@@ -1,0 +1,113 @@
+#header {
+	background-color:#581845;
+	color:gold;
+	font-family: sans-serif;
+	text-align: center;
+	border-radius: 12px;
+	border-style: outset;
+}
+
+#body {
+	background-color: white;
+}
+
+a {
+	color: white;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+h1, h2, h3 {
+	margin: 0;
+}
+
+#container {
+	background-color:white;
+	color: #600;
+	padding: 0px 50px;
+	border-radius: 12px;
+}
+
+#content {
+	padding: 10px 50px;
+	border-radius: 12px;
+}
+
+#nav {
+	width: 200px;
+	background-color: #C70039;
+	padding: 0px;
+	font-family: sans-serif;
+	border-radius: 12px;
+	float: left;
+	line-height: 20px;
+	color: yellow;
+	border-style: inset;
+	border-color: #9310D5;
+}
+
+#nav ul {
+	padding: 10px;
+	list-style-type: none;
+}
+
+
+#main {
+	width:800;
+	background-color:#FFDF8B;
+	padding: 50px;
+	border-style: inset;
+	border-radius: 12px;
+	float: right;
+}
+
+.button {
+	background-color:#FFFC96;
+    border: outset;
+    color:orange;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	border-radius: 12px;
+	border-color: gold;
+	font-family: sans-serif;
+}
+
+#footer {
+	clear: both;
+	text-align: right;
+}
+
+ table.center {
+    border-style:inset;
+    border-color: gold;
+    border-radius: 12px;
+    background-color:white; 
+  }
+
+  #map {
+  	border-style: inset;
+  	border-radius: 12px;
+  }
+
+.niceborder {
+  	background-color:silver;
+    border: outset;
+    color: gray;
+    padding: 7px 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+	border-radius: 12px;
+  }
+.linkdep {
+	text-decoration:none;
+	font-family: sans-serif;
+	text-decoration-color: white;
+}
