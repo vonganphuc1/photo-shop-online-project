@@ -7,6 +7,7 @@
     <title>Products - In ảnh Minh Thư</title>
     <link rel="stylesheet" type="text/css" href="../../css/san-pham.css">
     <script type="text/javascript" src="../js/quantity-css.js"></script>
+    <script type="text/javascript" src="../../js/elements-filtering.js"></script>
     <link rel="shortcut icon" href="../images/icon.ico" type="image/x-icon">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -18,60 +19,77 @@
 
 <body>
     <div id="myBtnContainer">
-        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-        <button class="btn" onclick="filterSelection('new')"> New</button>
-        <button class="btn" onclick="filterSelection('old')"> Old</button>
-        <button class="btn" onclick="filterSelection('low-price')"> Low Price</button>
-        <button class="btn" onclick="filterSelection('best-seller')"> Best Seller</button>
+        <center>
+            <button class="btn active" onclick="filterSelection('all')">Xem tất cả các sản phẩm</button>
+            <button class="btn" onclick="filterSelection('new')">Sảm phẩm mới</button>
+            <button class="btn" onclick="filterSelection('low-price')"> Giá thấp nhất</button>
+            <button class="btn" onclick="filterSelection('best-seller')">Bán chạy</button>
+        </center>
     </div>
-    <div class="card" style="float:left; margin: 0 5% 0 7.5%;">
-        <img src="../../images/in-anh-giay-lua.jpg" class="new" alt="Denim Jeans" style="width:100%; height: 300px;">
-        <h1>In Giấy Lụa</h1>
-        <p class="price">100.000 ₫</p>
-        <p>In ảnh giấy lụa là một trong những hình thức in được ưa chuộng nhất hiện nay. Không chỉ bởi ảnh trên giấy
-            lụa
-            cho ta nước ảnh đẹp, mà ảnh còn được lưu giữ rất bền. Giấy lụa là loại giấy mỏng, khá mềm mại, và được sử
-            dung
-            khá rộng rãi trong đời sống hằng ngày. Nên việc in ảnh trên giấy lụa đòi hỏi kỹ thuật viên phải có trình độ
-            cao
-            và dày dặn kinh nghiệm để có thể in hình ảnh một cách tỉ mỉ nhất. Giúp hình ảnh trở nên đẹp mắt hơn, cũng
-            như
-            ảnh không bị nhăn nhúm, không thẳng nếp.</p>
-        <p><button>Đặt hàng</button></p>
-    </div>
-    <div class="card" style="float:left; margin: auto; align-self: center;">
-        <img src="../../images/in-anh-len-go.jpg" class="new" alt="Denim Jeans" style="width:100%; height: 300px;">
-        <h1>In Ảnh Lên Gỗ</h1>
-        <p class="price">100.000 ₫</p>
-        <p>In ảnh giấy lụa là một trong những hình thức in được ưa chuộng nhất hiện nay. Không chỉ bởi ảnh trên giấy
-            lụa
-            cho ta nước ảnh đẹp, mà ảnh còn được lưu giữ rất bền. Giấy lụa là loại giấy mỏng, khá mềm mại, và được sử
-            dung
-            khá rộng rãi trong đời sống hằng ngày. Nên việc in ảnh trên giấy lụa đòi hỏi kỹ thuật viên phải có trình độ
-            cao
-            và dày dặn kinh nghiệm để có thể in hình ảnh một cách tỉ mỉ nhất. Giúp hình ảnh trở nên đẹp mắt hơn, cũng
-            như
-            ảnh không bị nhăn nhúm, không thẳng nếp.</p>
-        <p><button>Đặt hàng</button></p>
-    </div>
-    <div class="card" style="float:right; margin: 0 7.5% 0 5%;">
-        <img src="../../images/in-anh-the.jpg" alt="Denim Jeans" style="width:100%; height: 300px;">
-        <h1>In Ảnh Thẻ</h1>
-        <p class="price">100.000 ₫</p>
-        <p>In ảnh giấy lụa là một trong những hình thức in được ưa chuộng nhất hiện nay. Không chỉ bởi ảnh trên giấy
-            lụa
-            cho ta nước ảnh đẹp, mà ảnh còn được lưu giữ rất bền. Giấy lụa là loại giấy mỏng, khá mềm mại, và được sử
-            dung
-            khá rộng rãi trong đời sống hằng ngày. Nên việc in ảnh trên giấy lụa đòi hỏi kỹ thuật viên phải có trình độ
-            cao
-            và dày dặn kinh nghiệm để có thể in hình ảnh một cách tỉ mỉ nhất. Giúp hình ảnh trở nên đẹp mắt hơn, cũng
-            như
-            ảnh không bị nhăn nhúm, không thẳng nếp.</p>
-        <p><button>Đặt hàng</button></p>
+    <div class="container">
+        <div class="card" style="float:left; margin: 0 5% 0 7.5%;">
+            <img src="../../images/in-anh-giay-lua.jpg" alt="Denim Jeans" style="width:100%; height: 300px;">
+            <h1>In Giấy Lụa</h1>
+            <p class="price">100.000 ₫</p>
+            <p>In ảnh giấy lụa là một trong những hình thức in được ưa chuộng nhất hiện nay. Không chỉ bởi ảnh trên
+                giấy
+                lụa
+                cho ta nước ảnh đẹp, mà ảnh còn được lưu giữ rất bền. Giấy lụa là loại giấy mỏng, khá mềm mại, và được
+                sử
+                dung
+                khá rộng rãi trong đời sống hằng ngày. Nên việc in ảnh trên giấy lụa đòi hỏi kỹ thuật viên phải có
+                trình độ
+                cao
+                và dày dặn kinh nghiệm để có thể in hình ảnh một cách tỉ mỉ nhất. Giúp hình ảnh trở nên đẹp mắt hơn,
+                cũng
+                như
+                ảnh không bị nhăn nhúm, không thẳng nếp.</p>
+            <p><button>Đặt hàng</button></p>
+        </div>
+        <div class="card" style="float:left; margin: auto; align-self: center;">
+            <img src="../../images/in-anh-len-go.jpg" alt="Denim Jeans" style="width:100%; height: 300px;">
+            <h1>In Ảnh Lên Gỗ</h1>
+            <p class="price">100.000 ₫</p>
+            <p>In ảnh giấy lụa là một trong những hình thức in được ưa chuộng nhất hiện nay. Không chỉ bởi ảnh trên
+                giấy
+                lụa
+                cho ta nước ảnh đẹp, mà ảnh còn được lưu giữ rất bền. Giấy lụa là loại giấy mỏng, khá mềm mại, và được
+                sử
+                dung
+                khá rộng rãi trong đời sống hằng ngày. Nên việc in ảnh trên giấy lụa đòi hỏi kỹ thuật viên phải có
+                trình độ
+                cao
+                và dày dặn kinh nghiệm để có thể in hình ảnh một cách tỉ mỉ nhất. Giúp hình ảnh trở nên đẹp mắt hơn,
+                cũng
+                như
+                ảnh không bị nhăn nhúm, không thẳng nếp.</p>
+            <p><button>Đặt hàng</button></p>
+        </div>
+        <div class="card" style="float:right; margin: 0 7.5% 0 5%;">
+            <img src="../../images/in-anh-the.jpg" alt="Denim Jeans" style="width:100%; height: 300px;">
+            <h1>In Ảnh Thẻ</h1>
+            <p class="price">100.000 ₫</p>
+            <p>In ảnh giấy lụa là một trong những hình thức in được ưa chuộng nhất hiện nay. Không chỉ bởi ảnh trên
+                giấy
+                lụa
+                cho ta nước ảnh đẹp, mà ảnh còn được lưu giữ rất bền. Giấy lụa là loại giấy mỏng, khá mềm mại, và được
+                sử
+                dung
+                khá rộng rãi trong đời sống hằng ngày. Nên việc in ảnh trên giấy lụa đòi hỏi kỹ thuật viên phải có
+                trình độ
+                cao
+                và dày dặn kinh nghiệm để có thể in hình ảnh một cách tỉ mỉ nhất. Giúp hình ảnh trở nên đẹp mắt hơn,
+                cũng
+                như
+                ảnh không bị nhăn nhúm, không thẳng nếp.</p>
+            <p><button>Đặt hàng</button></p>
+        </div>
     </div>
 </body>
 <footer>
-
+    <script>
+        includeHTML();
+    </script>
 </footer>
 
 </html>
